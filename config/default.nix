@@ -64,6 +64,38 @@
         desc = "Format Lines";
       };
     }
+    {
+      mode = "n";
+      key = "<leader>y";
+      action = "<cmd>Yazi<cr>";
+      options = {
+        desc = "Open Yazi";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ff";
+      action = "<cmd>Telescope find_files<cr>";
+      options = {
+        desc = "Files";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>fb";
+      action = "<cmd>Telescope buffers<cr>";
+      options = {
+        desc = "Buffers";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>fg";
+      action = "<cmd>Telescope live_grep<cr>";
+      options = {
+        desc = "Grep";
+      };
+    }
   ];
 
   plugins = {
@@ -93,11 +125,6 @@
 
     telescope = {
       enable = true;
-      keymaps = {
-        "<leader>f" = "find_files";
-        "<leader>b" = "buffers";
-        "<leader>w" = "live_grep";
-      };
     };
 
     treesitter = {
